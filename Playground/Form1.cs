@@ -10,7 +10,7 @@ namespace Playground
         private void button1_Click(object sender, EventArgs e)
         {
             button1.BackColor = Color.Cyan;
-            if(BackColor != Color.Red)
+            if (BackColor != Color.Red)
             {
                 BackColor = Color.Red;
             }
@@ -19,8 +19,8 @@ namespace Playground
                 BackColor = Color.Blue;
             }
             string temperatura = textBox1.Text;
-            
-            switch(temperatura)
+
+            switch (temperatura)
             {
                 case "cald":
                     {
@@ -39,7 +39,7 @@ namespace Playground
                     }
             }
 
-            
+
         }
 
         private void button1_MouseLeave(object sender, EventArgs e)
@@ -50,6 +50,11 @@ namespace Playground
         private void button1_MouseEnter(object sender, EventArgs e)
         {
             button1.BackColor = Color.Yellow;
+        }
+
+        private void buttonOraExacta_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Este ora 10.", "Ora curenta", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

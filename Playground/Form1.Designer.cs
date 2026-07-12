@@ -31,6 +31,7 @@
             button1 = new Button();
             label1 = new Label();
             textBox1 = new TextBox();
+            buttonOraExacta = new Button();
             SuspendLayout();
             // 
             // button1
@@ -56,16 +57,27 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(412, 144);
+            textBox1.Location = new Point(476, 222);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(150, 31);
             textBox1.TabIndex = 2;
+            // 
+            // buttonOraExacta
+            // 
+            buttonOraExacta.Location = new Point(316, 294);
+            buttonOraExacta.Name = "buttonOraExacta";
+            buttonOraExacta.Size = new Size(112, 34);
+            buttonOraExacta.TabIndex = 3;
+            buttonOraExacta.Text = "Ora exacta";
+            buttonOraExacta.UseVisualStyleBackColor = true;
+            buttonOraExacta.Click += buttonOraExacta_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(765, 450);
+            Controls.Add(buttonOraExacta);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(button1);
@@ -80,5 +92,6 @@
         private Button button1;
         private Label label1;
         private TextBox textBox1;
+        private Button buttonOraExacta;
     }
 }
